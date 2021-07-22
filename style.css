@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background: #0082e6;
+    height: 7vh;
+    width: 100%;
+}
+
+label.logo {
+    position: relative;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    border: 2px solid red;
+    width: max-content;
+}
+
+.logo::before,
+.logo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logo::before {
+    background: teal;
+    animation: animate 2s steps(11) ease-in;
+}
+
+.logo::before {
+    width: 0.125em;
+    background: black;
+    animation: animate 2s steps(11) forwards;
+}
+
+@keyframes animate {
+    to {
+        left: 100%;
+    }
+}
+
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 3.3rem;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+a:active {
+    color: 0082e6;
+    background: #000;
+}
+
+#btn-1 {
+    color: white;
+    padding: .7rem;
+    font-size: 1rem;
+    background: rgb(266, 204, 79);
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+#btn-2 {
+    color: white;
+    padding: .7rem;
+    font-size: 1rem;
+    background: rgb(92, 174, 84);
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+img {
+    width: 1rem;
+    height: 2rem;
+}
+
+.lists {
+    display: inline-block;
+}
+
+.lists button {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.5s infinite;
+    -moz-animation: blink 0.5s infinite;
+    animation: blink 0.5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
