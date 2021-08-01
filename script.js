@@ -3,8 +3,6 @@ const codechef = document.getElementById('codechef');
 const leetcode = document.getElementById('leetcode');
 const atcoder = document.getElementById('atcoder');
 const gfg = document.getElementById('gfg');
-const signup = document.getElementById('signup');
-const login = document.getElementById('login');
 codeforces.addEventListener('click', () => {
     window.location.href = "http://www.codeforces.com";
 })
